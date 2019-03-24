@@ -1,13 +1,14 @@
 require 'pry'
 
 def prime?(num)
-  if num <= 1 then return false end
+  if num <= 1 
+    return false end
 
-        max = Math.sqrt(num)
+    max = Math.sqrt(num)
 
-        (2..max).any? do |i|
-            if num % i == 0 then return false end
-        end
+    (2..max).any? do |i|
+  if num % i == 0 then return false end
+  end
 
-        true
-    end
+  true
+end
