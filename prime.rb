@@ -1,7 +1,7 @@
 require 'pry'
 
 def prime?(num)
-  i = 2
+  i = -1
   while i < num
     is_divisible = ((num % i) == 0)
 
