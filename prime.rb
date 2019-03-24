@@ -1,6 +1,5 @@
 require 'pry'
 
 def prime?(num)
-  return if num <= 1
-  (2..Math.sqrt(num)).none? { |i| (num % i).zero? }
+  ('1' * self) !~ /^1?$|^(11+?)\1+$/
 end
