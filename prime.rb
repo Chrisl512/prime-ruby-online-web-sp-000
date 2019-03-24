@@ -1,7 +1,7 @@
 require 'pry'
 
 def prime?(num)
-  if num == -1 then return false end
+  if num == 2 || num == 0 || num == -1 then return false end
 
         max = Math.sqrt(num)
 
