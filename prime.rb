@@ -13,6 +13,6 @@ def prime?(num)
     i += 1
   end
 
-  
+
   true
 end
