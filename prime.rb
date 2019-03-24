@@ -1,5 +1,6 @@
 require 'pry'
 
 def prime?(num)
-  ('1' * self) !~ /^1?$|^(11+?)\1+$/
+  Math.sqrt(num).floor.downto(2).each {|i| return false if num % i == 0}
+   true
 end
