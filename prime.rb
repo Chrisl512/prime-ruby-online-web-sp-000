@@ -1,18 +1,14 @@
 require 'pry'
 
 def prime?(num)
-  i = -1
-  while i < num
-    is_divisible = ((num % i) == 0)
+  if number == 1 then return false end        
 
-    if is_divisible
+        max = Math.sqrt(number)
 
-      return false
+        (2..max).any? do |i| 
+            if number % i == 0 then return false end
+        end
+
+        true
     end
-
-    i += 1
-  end
-
-
-  true
 end
